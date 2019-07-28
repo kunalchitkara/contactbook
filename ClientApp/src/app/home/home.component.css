@@ -1,0 +1,33 @@
+.home-container {
+  color: #37A;
+}
+
+  .home-container .container {
+  }
+
+    .home-container .container .header {
+      text-transform: capitalize;
+      font-size: 50px;
+      font-weight: 600;
+      padding: 10px;
+      height: 110px;
+      overflow: hidden;
+      color: #B33;
+    }
+
+      .home-container .container .header img.logo {
+        height: 70%;
+        margin-right: 5px;
+      }
+
+      .home-container .container .header .description {
+        font-size: 14px;
+        font-weight: 300;
+        width: 60%;
+        position: relative;
+        left: 55px;
+        top: -10px;
+        color: #37A;
+        text-transform: lowercase;
+        font-style: oblique;
+      }

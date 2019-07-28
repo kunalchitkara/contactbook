@@ -1,0 +1,13 @@
+<header>
+  {{data.header ? data.header : "Confirmation"}}
+  <button mat-mini-fab class="close" [mat-dialog-close]="true">
+    <mat-icon>close</mat-icon>
+  </button>
+</header>
+<div mat-dialog-content>
+  {{data.message}}
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-raised-button (click)="onNegativeClick()" [mat-dialog-close]="true" ng-hide="!data.buttonNegative" class="no">{{data.buttonNegative}}</button>
+  <button mat-raised-button (click)="onPositiveClick()" [mat-dialog-close]="true" ng-hide="!data.buttonPositive" cdkFocusInitial>{{data.buttonPositive}}</button>
+</div>

@@ -1,0 +1,36 @@
+<form [formGroup]="contactForm" autocomplete="off" (ngSubmit)="onContactSave(contactForm.value)">
+  <header>
+    {{data.isNew ? "Add New Contact" : "Edit " + data.contact.firstName + "'s Contact"}}
+    <button mat-mini-fab class="close" [mat-dialog-close]="true">
+      <mat-icon>close</mat-icon>
+    </button>
+  </header>
+  <div mat-dialog-content>
+    <div class="text-center">
+      <h5>Let's fill out the contact details</h5>
+      <input type="hidden" formControlName="id" [(ngModel)]="data.contact.id">
+      <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput autocomplete="off" placeholder="First Name" formControlName="firstName" maxlength="40" [(ngModel)]="data.contact.firstName">
+        <mat-error>{{errorText('firstName')}}</mat-error>
+        <mat-hint align="end">{{'' + length('firstName') + ' / 40'}}</mat-hint>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput autocomplete="off" placeholder="Last Name" formControlName="lastName" maxlength="40" [(ngModel)]="data.contact.lastName">
+        <mat-error>{{errorText('lastName')}}</mat-error>
+        <mat-hint align="end">{{'' + length('lastName') + ' / 40'}}</mat-hint>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Contact Number</mat-label>
+        <input matInput autocomplete="off" type="tel" placeholder="Contact Number" formControlName="number" [(ngModel)]="data.contact.number">
+        <mat-error>{{errorText('number')}}</mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions align="end">
+    <button mat-raised-button [mat-dialog-close]="true" class="no">Cancel</button>
+    <button mat-raised-button type="submit" cdkFocusInitial [disabled]="!contactForm.valid">Save</button>
+  </div>
+</form>
+<ngx-spinner name="requestSpinner" type="ball-fussion">Sending Request</ngx-spinner>

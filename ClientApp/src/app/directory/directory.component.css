@@ -1,0 +1,91 @@
+.action-center {
+}
+
+  .action-center .btn {
+    position: relative;
+    top: -6px;
+    height: 58px;
+    color: #FFF;
+    font-size: 18px;
+    padding: 0 20px;
+    margin: 5px;
+  }
+
+    .action-center .btn.add {
+      background: #37A;
+    }
+
+    .action-center .btn.delete {
+      background: #B33;
+    }
+
+  .action-center .mat-form-field {
+    width: 75%;
+    margin: 5px;
+    font-size: 15px;
+  }
+
+    .action-center .mat-form-field input {
+      padding: 0px 0 5px 10px;
+    }
+
+    .action-center .mat-form-field mat-icon {
+      bottom: 4px;
+      position: relative;
+    }
+
+.contact-list {
+  width: 75%;
+  margin: -10px 10px;
+}
+
+  .contact-list table.mat-table {
+    width: 100%;
+    box-shadow: none;
+  }
+
+    .contact-list table.mat-table thead {
+    }
+
+      .contact-list table.mat-table thead tr {
+      }
+
+        .contact-list table.mat-table thead tr th {
+        }
+
+  .contact-list table.mat-table {
+  }
+
+    .contact-list table.mat-table tr {
+    }
+
+      .contact-list table.mat-table tr td.mat-cell {
+        /*padding: 10px;*/
+      }
+
+        .contact-list table.mat-table tr td.mat-cell:first-of-type {
+          /*padding: 24px;*/
+        }
+
+      .contact-list table.mat-table tr td.mat-column-actions {
+      }
+
+        .contact-list table.mat-table tr td.mat-column-actions button {
+          outline: none;
+          width: 30px;
+          height: 30px;
+          margin: 10px 4px;
+          color: #FFF;
+        }
+
+          .contact-list table.mat-table tr td.mat-column-actions button.delete {
+            background: #B33;
+          }
+
+          .contact-list table.mat-table tr td.mat-column-actions button.edit {
+            background: #37A;
+          }
+
+          .contact-list table.mat-table tr td.mat-column-actions button mat-icon {
+            font-size: 14px;
+          }

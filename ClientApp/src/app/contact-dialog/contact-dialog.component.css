@@ -1,0 +1,53 @@
+mat-form-field {
+  display: block;
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+  mat-form-field textarea {
+    overflow: hidden;
+  }
+
+.mat-dialog-title {
+  color: #55F;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+}
+
+  .mat-dialog-title img.logo {
+    width: 60px;
+    margin-right: 10px;
+  }
+
+.mat-dialog-content {
+  padding: 0 25%;
+  width: 450px;
+}
+
+  .mat-dialog-content h5 {
+    white-space: nowrap;
+    font-size: 15px;
+  }
+
+.mat-dialog-actions {
+  text-align: center;
+  display: block;
+  margin: 10px 0px -10px 0px;
+}
+
+  .mat-dialog-actions .mat-raised-button {
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    margin: -10px 10px 20px 10px;
+    outline: none;
+  }
+
+    .mat-dialog-actions .mat-raised-button.mat-primary {
+      background: #37A;
+    }
+
+      .mat-dialog-actions .mat-raised-button.mat-primary[disabled] {
+        color: #FFF;
+        background: #AAA;
+      }
