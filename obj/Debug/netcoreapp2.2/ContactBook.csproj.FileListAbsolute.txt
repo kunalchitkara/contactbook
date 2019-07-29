@@ -21,3 +21,4 @@ D:\workspace_personal\ContactBook\obj\Debug\netcoreapp2.2\ContactBook.Views.pdb
 D:\workspace_personal\ContactBook\obj\Debug\netcoreapp2.2\ContactBook.dll
 D:\workspace_personal\ContactBook\obj\Debug\netcoreapp2.2\ContactBook.pdb
 D:\workspace_personal\ContactBook\obj\Debug\netcoreapp2.2\ContactBook.csproj.CopyComplete
+D:\workspace_personal\ContactBook\obj\Debug\netcoreapp2.2\ContactBook.csprojAssemblyReference.cache

@@ -159,6 +159,9 @@ export class DirectoryComponent {
                 "An error occured while deleting contacts.",
                 "Okay",
                 null);
+              modalData.buttonPositiveHandler = () => {
+                return;
+              };
               this.dialogService.open(ConfirmationDialogComponent, {
                 autoFocus: false,
                 data: modalData
@@ -172,6 +175,9 @@ export class DirectoryComponent {
               "An error occured while deleting contacts.",
               "Okay",
               null);
+            modalData.buttonPositiveHandler = () => {
+              return;
+            };
             this.dialogService.open(ConfirmationDialogComponent, {
               autoFocus: false,
               data: modalData
@@ -203,6 +209,9 @@ export class DirectoryComponent {
               "An error occured while deleting contact.",
               "Okay",
               null);
+            modalData.buttonPositiveHandler = () => {
+              return;
+            };
             this.dialogService.open(ConfirmationDialogComponent, {
               autoFocus: false,
               data: modalData
